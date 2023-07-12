@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+ <div class="mt-5 "> 
+    <div class="text-center">
+        <img src="{% static 'core/image/pic1.jpeg' %}" alt="ProfilePic" class="img-thumbnail" width="250px" heigth="150px" >
+    </div>
+    
+    <div class="mt-5 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height:2rem;">
+            <p style="text-indent:100px;"> Welcome to my portfolio! My name is <bclass="text-warning">Tanu Maurya</b>
+                I am a dedicated student currently pursuing a B.Tech in Computer Science and Engineering with a specialization in Data Science at ABES Engineering College. 
+                With an unwavering passion for technology and a particular focus on Data Science and Web Development, 
+                I am wholeheartedly committed to achieving my goal of becoming a skilled professional in this exciting field.</p>
+            <p>
+                Throughout my educational journey, I have consistently sought opportunities to enhance my skills and knowledge in Data Science and Web Development. 
+                I firmly believe in the power of continuous learning and personal growth. 
+                By immersing myself in various projects and engaging in hands-on experiences, I have been able to sharpen my abilities and expand my understanding of these domains.
+            </p>
+            <p>
+                Within the realm of Data Science, I have discovered a fascination for extracting valuable insights from vast amounts of information. 
+                The ability to analyze data, identify patterns, and derive meaningful conclusions fuels my curiosity and drives me forward. 
+                Moreover, my aptitude for Web Development has enabled me to create interactive and user-friendly applications that provide seamless experiences for end-users.
+            </p>
+            <p>
+                This website serves as a platform to showcase some of the projects I have undertaken, highlighting my skills, abilities, and achievements. 
+                I invite you to explore these projects, as they reflect my relentless pursuit of excellence and my ongoing journey towards a successful career in the dynamic world of technology.
+            </p>
+            <p>
+                Thank you for visiting my portfolio, and I hope that you find my work engaging and inspiring.
+            </p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a> 
+    </div>
+    
+</div>
+{% endblock content %}
